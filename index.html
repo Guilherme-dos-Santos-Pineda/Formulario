@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./index.css">
+  <script src="./index.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Multi-step form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <main>
+    <div class="sidebar">
+      <div class="numero one active">
+          <span>1</span>
+        <div class="item">
+          STEP 1
+          <div class="p">
+            YOUR INFO
+          </div>
+        </div>
+      </div>
+      <div class="numero">
+          <span>2</span>
+        <div class="item">
+          STEP 2
+          <div class="p">
+            SELECT PLAN
+          </div>
+        </div>
+      </div>
+      <div class="numero">
+          <span>3</span>
+        <div class="item">
+          STEP 3
+          <div class="p">
+            ADD-ONS
+          </div>
+        </div>
+      </div>
+      <div class="numero">
+          <span>4</span>
+        <div class="item">
+          STEP 4
+          <div class="p">
+            SUMMARY
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- STEP 1 COMEÇO -->
+      <div class="StepUm">
+        <div class="tituloEparagrafo">
+          <h1>Personal info</h1>
+          <p>Please provide your name, email address, and phone number.</p>
+        </div>
+        <form class="form" action="#">
+          <label for="User">Name</label>
+          <input class="a" type="text" name="Name" placeholder="e.g.stephen king" id="User" required>
+    
+          <label for="Email">Email Address</label>
+          <input class="a" type="email" name="Email" placeholder="e.g.stephenking@lorem.com" id="Email" required>
+    
+          <label for="Phone">Phone Number</label>
+          <input class="a" type="text" name="Phone" placeholder="e.g. +1 234 567 890" id="Phone" required>
+        </form>
+        <div class="divBotao">
+          <div class="botao">Next Step</div>
+        </div>
+      </div>
+      <!-- STEP 1 FINAL -->
+
+      <!-- STEP 2 COMEÇO -->
+      <div class="StepDois">
+        <div class="tituloEparagrafo">
+          <h1>Select Your Plan</h1>
+          <p>You have the option of monthly or yearly billing.</p>
+        </div>
+        <div class="divTres">
+          <div class="plano planoAtivado">
+            <img src="./assets/images/icon-arcade.svg" alt="icon-arcade">
+            <container class="preco">
+              <h3>Arcade</h3>
+              <p class="arcade">$9/mo</p>      
+              <p class="monthsFree">2 months free</p>      
+            </container>
+          </div>
+          <div class="plano">
+            <img src="./assets/images/icon-advanced.svg" alt="icon-advanced">
+            <container class="preco">
+              <h3>Advanced</h3>
+              <p class="advanced">$12/mo</p>    
+              <p class="monthsFree">2 months free</p>    
+            </container>
+          </div>
+          <div class="plano">
+            <img src="./assets/images/icon-pro.svg" alt="icon-pro">
+            <container class="preco">
+              <h3>Pro</h3>
+              <p class="pro">$15/mo</p>   
+              <p class="monthsFree">2 months free</p>   
+            </container>
+          </div>
+        </div>
+        <div class="swite">
+          <div class="btn">
+            <span class="mesAtivado">Monthly</span>
+            <img class="imgBtn liga" src="./assets/icones/toggle-off-solid.svg" alt="imagem">
+            <span class="anoDesativado">Yearly</span>
+          </div>
+        </div>
+        <div class="divBotaoStepDois">
+          <div class="botaoVoltar">Go Back</div>
+          <div class="botaoDois">Next Step</div>
+        </div>
+      </div>
+      <!-- STEP 2 FINAL -->
+
+      <!-- STEP 3 COMEÇO -->
+      <div class="StepTres">
+        <div class="tituloEparagrafo">
+          <h1>Pick add-on</h1>
+          <p>Add-ons help enhance your gaming experience.</p>
+        </div>
+        <div class="divDosInputs">
+          <div class="inputStepTres">
+            <div class="cbox">
+              <input type="checkbox" id="cboxUM">
+            </div>
+            <div class="chkboxDetalhes">
+              <p class="tituloParagr">Online services</p>
+              <p class="descr">Acess to multiplayer games</p>              
+            </div>
+            <div class="valor oS">+$01/mo</div>
+          </div>
+          <div class="inputStepTres">
+            <div class="cbox">
+              <input type="checkbox" id="cboxDOIS">
+            </div>
+            <div class="chkboxDetalhes">
+              <p class="tituloParagr">Larger storage</p>
+              <p class="descr">Extra 1TB of cloud save</p>             
+            </div>
+            <div class="valor lS">+$02/mo</div>
+          </div>
+          <div class="inputStepTres">
+            <div class="cbox">
+              <input type="checkbox" id="cboxTRES">
+            </div>
+            <div class="chkboxDetalhes">
+              <p class="tituloParagr">Customizable profile</p>
+              <p class="descr" >Custom theme on your profile</p>
+            </div>
+            <div class="valor cP">+$02/mo</div>
+          </div>
+        </div>
+        <div class="divBotaoStepDois">
+          <div class="botaoVoltarDois">Go Back</div>
+          <div class="botao botaoStepTres">Next Step</div>
+        </div>
+      </div>
+      <!-- STEP 3 FINAL -->
+
+      <!-- STEP 4 COMEÇO -->
+      <div class="StepQuatro">
+        <div class="tituloEparagrafo tituloEparagrafoQuatro">
+          <h1>Finishing up</h1>
+          <p>Double-check everything looks OK before confirming.</p>
+        </div>
+        <div class="divDoDisplay">
+          <div class="displayService">
+            <div class="displayDetalhes">
+              <p class="tituloDisplay">Arcade (Monthly)</p>
+              <p class="change">Change</p>              
+            </div>
+            <div class="displayValor">$9/mo</div>
+          </div>
+          <div class="displayServiceOpcional">
+            <div class="displayDetalhesOpc">
+              <p class="tituloDisplayOpc">Larger storage</p>             
+            </div>
+            <div class="valorOpc">+$1/mo</div>
+          </div>
+          <div class="displayServiceOpcional asd">
+            <div class="displayDetalhesOpc">
+              <p class="tituloDisplayOpc">Customizable profile</p>
+            </div>
+            <div class="valorOpc">+$2/mo</div>
+          </div>
+          <div class="resultadoDiv">
+            <div class="displayDetalhesResult">
+              <p class="titulorResult">Total (per month)</p>
+            </div>
+            <div class="resultadoFinal">+$2/mo</div>
+          </div>
+        </div>
+        <div class="divBotaoStepQuatro">
+          <div class="botaoVoltarTres">Go Back</div>
+          <div class="botaoStepQuatro">Confirm</div>
+        </div>
+      </div>
+      <!-- STEP 4 FINAL -->
+    </div>
+  </main>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>

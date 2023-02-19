@@ -1,0 +1,502 @@
+@font-face {
+    font-family: 'UbuBold' ;
+    src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+    font-family: 'UbuMed' ;
+    src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+    font-family: 'Ubu' ;
+    src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    /* CORES PRIMARIAS */
+    --MarineBlue: hsl(213, 96%, 18%);
+    --PurplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+
+    /* CORES NEUTRAS */
+    --CoolGray: hsl(231, 11%, 63%);
+    --LightGray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    font-family: Ubu;
+    color: var(--MarineBlue);
+    background: var(--Magnolia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 15px;
+    width: 950px;
+    height: auto;
+    background: var(--Alabaster);
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0.5px 1px 25px 0px var(--LightGray);
+}
+.sidebar{
+    background-image: url(./assets/images/bg-sidebar-desktop.svg);
+    background-repeat: no-repeat;
+    height: 565px;
+    width: 276px;
+    border-radius: 12px;
+    position: relative;
+}
+.numero{
+    text-align: center;
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--Magnolia);
+    padding: 0px 50px 0px 35px;
+}
+.numero > span{
+    border: 1px solid var(--Magnolia);
+    border-radius: 25px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: UbuBold;
+}
+
+    /* CLASSE PARA ATIVAR */
+
+.active > span{
+    color: black;
+    background: var(--LightBlue);
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+    color: var(--CoolGray);
+}
+.one{
+    margin-top: 25px;
+}
+.p{
+    font-family: UbuBold;
+    color: var(--Magnolia);
+    padding: 2px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+    /* STEP 1 INICIO */
+.StepUm{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.tituloEparagrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tituloEparagrafo > h1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: UbuBold;
+}
+.tituloEparagrafo > p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 0px 0px 0px;
+    color: var(--CoolGray);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+form > input{
+    width: 440px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: ubuMed;
+    border: 1px solid var(--LightGray);
+    margin: 5px 0px 20px 0px;
+    cursor: pointer;
+}
+input::placeholder{
+    color: var(--CoolGray);
+}
+label{
+    font-size: 14px;
+}
+.divBotao{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+.botao{
+    font-family: Ubu;
+    width: 100px;
+    padding: 11px;
+    border-radius: 5px;
+    color: var(--White);
+    background: var(--MarineBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.botao:hover{
+    background: hsl(213, 82%, 30%);
+}
+
+    /* STEP 1 FINAL */
+
+    /* STEP 2 INICIO */
+
+.StepDois{
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.divTres{
+    display: flex;
+    width: 441px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border: none !important;
+}
+.pro, .advanced, .arcade{
+    color: var(--CoolGray);
+}
+.plano{
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    width: 140px;
+    height: 160px;
+    border: 1px solid var(--LightGray);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.planoAtivado{
+    border: 3px solid var(--PastelBlue);
+}
+.preco{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.monthsFree{
+    display: none;
+    margin-top: 5px;
+    font-family: UbuMed;
+    color: var(--MarineBlue);
+    font-size: 12px;
+}
+.swite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--Magnolia);
+    border-radius: 5px;
+}
+.imgBtn{
+    margin: 0px 9px 0px 11px;
+    cursor: pointer;
+}
+.liga{
+    width: 36px;
+    height: 36px;
+}
+.desliga{
+    width: 36px;
+    height: 36px; 
+}
+.btn{
+    display: flex;
+    width: auto;
+    height: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.btn > span{
+    font-family: UbuBold;
+    font-size: 14px;
+}
+/* CLASSES PARA OS BOTOES DE MES E ANO COMEÇO */
+.mesAtivado{
+    color: var(--MarineBlue);
+}
+.mesDesativado{
+    color: var(--CoolGray);
+}
+.anoDesativado{
+    color: var(--CoolGray);
+}
+.anoAtivado{
+    color: var(--MarineBlue);
+}
+/* CLASSES PARA OS BOTOES DE MES E ANO FINAl */
+.divBotaoStepDois{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.botaoVoltar{
+    font-family: UbuMed;
+    cursor: pointer;
+    color: var(--CoolGray);
+}
+.botaoVoltar:hover{
+    color: var(--MarineBlue);
+}
+
+    /* STEP 2 FINAL */
+
+    /* STEP 3 INICIO */
+
+.StepTres{
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    width: auto;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.divDosInputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputStepTres{
+    margin: 13px 0px 10px 0px;
+    padding: 11px;
+    display: flex;
+    width: 442px;
+    height: 65px;
+    /* background-color: green; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid var(--CoolGray);
+}
+.inputStepTresActive{
+    border: 1px solid var(--PurplishBlue);
+}
+.cbox{
+    display: flex;
+    justify-content: flex-end;
+}
+.chkboxDetalhes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.tituloParagr{
+    color: var(--MarineBlue);
+    font-family: UbuBold;
+}
+.descr{
+    color: var(--CoolGray);
+    font-size: 12px;
+    padding: 2px;
+}
+.valor{
+    font-family: Ubu;
+    color: var(--PurplishBlue);
+    font-size: 13px;
+}
+.botaoDois{
+    font-family: Ubu;
+    width: 100px;
+    padding: 11px;
+    border-radius: 5px;
+    color: var(--White);
+    background: var(--MarineBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.botaoDois:hover{
+    background: hsl(213, 82%, 30%);
+}
+.botaoVoltarDois{
+    font-family: UbuMed;
+    cursor: pointer;
+    color: var(--CoolGray);
+}
+.botaoVoltarDois:hover{
+    color: var(--MarineBlue);
+}
+input{
+    width: auto;
+    height: auto;
+    border-radius: auto;
+    padding: auto;
+    font-family: ubuMed;
+    border: 1px solid var(--LightGray);
+    margin: auto;
+    cursor: pointer;
+}
+
+/* STEP 4 COMEÇO */
+.StepQuatro{
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    width: 450px;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.tituloEparagrafoQuatro{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.divDoDisplay{
+    margin: 0px 0px 115px 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.asd{
+    border-radius: 0px 0px 10px 10px;
+}
+.displayService{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-bottom: 0.5px solid var(--CoolGray);
+    padding: 15px 10px;
+    border-radius: 10px 10px 0px 0px;
+    background: var(--Magnolia);
+}
+.displayDetalhes{
+
+}
+.tituloDisplay{
+    font-family: 'UbuBold';
+}
+.change{
+
+}
+.displayValor{
+    font-family: 'UbuBold';
+}
+/* SERVIÇOS OPCIONAIS COMEÇO*/
+.displayServiceOpcional{
+    font-family: 'UbuMed';
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    background: var(--Magnolia);
+}
+.displayDetalhesOpc{
+
+}
+.tituloDisplayOpc{
+    color: var(--CoolGray);
+}
+.valorOpc{
+    color: var(--MarineBlue);
+    font-family: 'UbuMed';
+}
+/* SERVIÇOS OPCIONAIS FINAL*/
+/* RESULTADO GERAL COMEÇO */
+.resultadoDiv{
+    padding: 13px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.displayDetalhesResult{
+    font-size: 12px;
+}
+.titulorResult{
+
+}
+.resultadoFinal{
+    color: var(--PurplishBlue);
+    font-family: 'UbuBold';
+}
+/* RESULTADO GERAL FINAL */
+.divBotaoStepQuatro{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.botaoVoltarTres{
+    font-family: UbuMed;
+    cursor: pointer;
+    color: var(--CoolGray);
+}
+.botaoVoltarTres:hover{
+    color: var(--MarineBlue);
+}
+.botaoStepQuatro{
+    font-family: Ubu;
+    width: 100px;
+    padding: 11px;
+    border-radius: 5px;
+    color: var(--White);
+    background: var(--MarineBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.botaoStepQuatro:hover{
+    background: hsl(213, 82%, 30%);
+}
+
+/* STEP 4 FINAL */
