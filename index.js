@@ -28,9 +28,16 @@ var cboxDOIS = document.querySelector("#cboxDOIS")
 var cboxTRES = document.querySelector("#cboxTRES")
 var tituloDisplay = document.querySelector(".tituloDisplay")
 var displayValor = document.querySelector(".displayValor")
-var tituloDisplayOpc = document.querySelector(".tituloDisplayOpc")
-var valorOpc = document.querySelector(".valorOpc")
+var tituloDisplayOpcUM = document.querySelector(".tituloDisplayOpcUM")
+var tituloDisplayOpcDOIS = document.querySelector(".tituloDisplayOpcDOIS")
+var tituloDisplayOpcTRES = document.querySelector(".tituloDisplayOpcTRES")
+var valorOpcUM = document.querySelector(".valorOpcUM")
+var valorOpcDOIS = document.querySelector(".valorOpcDOIS")
+var valorOpcTRES = document.querySelector(".valorOpcTRES")
+var titulorResult = document.querySelector(".titulorResult")
 var resultadoFinal = document.querySelector(".resultadoFinal")
+var agradecimento = document.querySelector(".agradecimento")
+var soma;
 
 // serviços da pagina 2
 var arc = 9
@@ -276,38 +283,59 @@ divDosInputs.addEventListener("click", (e)=>{
 
         if(cboxUM.checked == true && a == 0){
             onServ = 1
-            console.log("O numero do On servicve é " + onServ)   
+            console.log("O numero do On servicve é " + onServ)
+            tituloDisplayOpcUM.innerText = 'Online Services'
+            valorOpcUM.innerText = '+$1/mo'  
+         
         }if(cboxUM.checked == true && a == 1){
             onServ = 10
-            console.log("O numero do On servicve é " + onServ) 
+            console.log("O numero do On servicve é " + onServ)
+            tituloDisplayOpcUM.innerText = 'Online Services'
+            valorOpcUM.innerText = '+$10/yr'    
         }if(cboxUM.checked == false){
             onServ = 0
+            tituloDisplayOpcUM.innerText = ''
+            valorOpcUM.innerText = '' 
         }
 
         if(cboxDOIS.checked == true && a == 0){
             lStg = 2
-            console.log("O numero do large storage é " + lStg)   
+            console.log("O numero do large storage é " + lStg)
+            tituloDisplayOpcDOIS.innerText = 'Larger Storage'
+            valorOpcDOIS.innerText = '+$2/mo'      
         }if(cboxDOIS.checked == true && a == 1){
             lStg = 20
-            console.log("O numero do large storage é " + lStg)   
+            console.log("O numero do large storage é " + lStg)
+            tituloDisplayOpcDOIS.innerText = 'Larger Storage'
+            valorOpcDOIS.innerText = '+$20/yr'    
         }if(cboxDOIS.checked == false){
             lStg = 0
+            tituloDisplayOpcDOIS.innerText = ''
+            valorOpcDOIS.innerText = '' 
         }
 
         if(cboxTRES.checked == true && a == 0){
             customProf = 2
-            console.log("O numero do Customizable profile é " + customProf)   
+            console.log("O numero do Customizable profile é " + customProf)
+            tituloDisplayOpcTRES.innerText = 'Customizable profile'
+            valorOpcTRES.innerText = '+$2/mo'    
         }if(cboxTRES.checked == true && a == 1){
             customProf = 20
-            console.log("O numero do Customizable profile é " + customProf)  
+            console.log("O numero do Customizable profile é " + customProf)
+            tituloDisplayOpcTRES.innerText = 'Customizable profile'
+            valorOpcTRES.innerText = '+$20/mo'    
         }if(cboxTRES.checked == false){
             customProf = 0
+            tituloDisplayOpcTRES.innerText = ''
+            valorOpcTRES.innerText = ''  
+        }
+        if(cboxUM.checked == false && cboxDOIS.checked == false && cboxTRES.checked == false){
+            tituloDisplayOpcDOIS.innerText = 'No Services Add'
+            valorOpcDOIS.innerText = ''
         }
         // mudr conforme o ano ou mes
         
     }
-
-    
 })
 
 
@@ -397,10 +425,21 @@ divDosInputs.addEventListener("click", (e)=>{
         }
         if(botaoStepQuatro.disabled == false){
             botaoStepQuatro.style.background = "var(--PurplishBlue)"
+            botaoStepQuatro.addEventListener("click",()=>{
+            agradecimento.style.display = 'flex'
+            StepQuatro.style.display = 'none'
+            })
         }
-
-
-
+        soma = onServ + lStg + customProf + arc + adv + prro
+        if(a == 1){
+            console.log('ano')
+            resultadoFinal.innerHTML = `+$${soma}/yr`
+            titulorResult.innerText = `Total (per year)`
+        }if(a == 0){
+            console.log('mes')
+            resultadoFinal.innerHTML = `+$${soma}/mo`
+            titulorResult.innerText = `Total (per month)`
+        }
 
     }
 
