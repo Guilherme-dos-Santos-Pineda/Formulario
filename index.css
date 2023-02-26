@@ -517,3 +517,278 @@ input{
     width: 450px;
     text-align: center;
 }
+
+
+
+/* MOBILE */
+@media (max-width: 600px)
+{
+    .sidebar {
+        background: url(./assets/images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+    }
+.numero{
+    padding: 0;
+    width: auto;
+}
+.one{
+    margin: 0;
+}
+.item, .p{
+    display: none;
+}
+main {
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: var(--Alabaster);
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0.5px 1px 25px 0px var(--LightGray);
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 400px;
+    align-items: center;
+    background: var(--Magnolia);
+}
+.a{
+    width: 100%;
+}
+.tituloEparagrafo {
+    font-size: 10px;
+    width: 300px;
+}
+.StepUm {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepDois {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepTres {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepQuatro {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.agradecimento {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 450px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+}
+
+
+
+@media (max-width: 450px)
+{
+    .sidebar {
+        background: url(./assets/images/bg-sidebar-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        width: 100%;
+        border-radius: 12px;
+        position: absolute;
+        display: flex;
+        justify-content: space-evenly;
+    }
+.numero{
+    padding: 0;
+    width: auto;
+}
+.one{
+    margin: 0;
+}
+.item, .p{
+    display: none;
+}
+main {
+    padding: 0;
+    width: auto;
+    height: auto;
+    background: var(--Alabaster);
+    display: flex;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0.5px 1px 25px 0px var(--LightGray);
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 0px;
+    align-items: center;
+    background: var(--Magnolia);
+}
+.a{
+    width: 100%;
+}
+.tituloEparagrafo {
+    font-size: 10px;
+    width: 200px;
+}
+.StepUm {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepDois {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 250px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepTres {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 250px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.StepQuatro {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 250px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.agradecimento {
+    border-radius: 15px;
+    margin-top: 740px;
+    background: var(--Alabaster);
+    position: absolute;
+    height: 500px;
+    flex-direction: column;
+    width: 250px;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.plano {
+    font-size: 10px;
+    cursor: pointer;
+    padding: 5px 0px 5px 10px;
+    display: flex;
+    width: 65px;
+    height: 80px;
+    border: 1px solid var(--LightGray);
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.divTres {
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    border: none !important;
+}
+.inputStepTres {
+    margin: 13px 0px 10px 0px;
+    padding: 11px
+px
+;
+    display: flex;
+    width: 200px;
+    height: 53px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 1px solid var(--CoolGray);
+    font-size: 10px;
+}
+.agradecimento > p {
+    padding: 5px;
+    color: var(--CoolGray);
+    width: 200px;
+    text-align: center;
+}
+}
