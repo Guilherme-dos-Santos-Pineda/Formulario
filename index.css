@@ -754,8 +754,8 @@ main {
     cursor: pointer;
     padding: 5px 0px 5px 10px;
     display: flex;
-    width: 65px;
-    height: 80px;
+    width: 70px;
+    height: 114px;
     border: 1px solid var(--LightGray);
     border-radius: 10px;
     flex-direction: column;
@@ -772,9 +772,7 @@ main {
 }
 .inputStepTres {
     margin: 13px 0px 10px 0px;
-    padding: 11px
-px
-;
+    padding: 11px;
     display: flex;
     width: 200px;
     height: 53px;
@@ -790,5 +788,18 @@ px
     color: var(--CoolGray);
     width: 200px;
     text-align: center;
+}
+.divDoDisplay {
+    margin: 0px 0px 79px 0px;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.planoAtivado {
+    border: 3px solid var(--PastelBlue);
+}
+.inputStepTresActive {
+    border: 1px solid var(--PurplishBlue);
 }
 }
